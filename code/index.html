@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Demo</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex">
+<meta name="googlebot" content="noindex">
+<link rel="shortcut icon" href="https://webcoban.vn/home/image/favicon.png">
+<link rel="stylesheet" href="https://webcoban.vn/home/codemirror/lib/codemirror.css">
+<link rel="stylesheet" href="https://webcoban.vn/home/codemirror/addon/scroll/simplescrollbars.css">
+<link rel="stylesheet" href="https://webcoban.vn/home/codemirror/theme/monokai.css">
+<link rel="stylesheet" href="https://webcoban.vn/home/bootstrap/4.5.2/css/bootstrap.min.css">
+<script src="https://webcoban.vn/home/codemirror/lib/codemirror.js"></script>
+<script src="https://webcoban.vn/home/codemirror/mode/javascript/javascript.js"></script>
+<script src="https://webcoban.vn/home/codemirror/mode/css/css.js"></script>
+<script src="https://webcoban.vn/home/codemirror/mode/xml/xml.js"></script>
+<script src="https://webcoban.vn/home/codemirror/mode/htmlmixed/htmlmixed.js"></script>
+<script src="https://webcoban.vn/home/codemirror/addon/scroll/simplescrollbars.js"></script>
+<script src="https://webcoban.vn/home/codemirror/addon/fold/xml-fold.js"></script>
+<script src="https://webcoban.vn/home/codemirror/addon/edit/matchbrackets.js"></script>
+<script src="https://webcoban.vn/home/codemirror/addon/edit/closebrackets.js"></script>
+<script src="https://webcoban.vn/home/codemirror/addon/edit/closetag.js"></script>
+<script src="https://webcoban.vn/home/codemirror/mode/clike/clike.js"></script>
+<script src="https://webcoban.vn/home/codemirror/mode/php/php.js"></script>
+<script src="https://webcoban.vn/home/ajax/jQuery/jquery-1.13.0.min.js"></script>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+<div id="top"></div>
+<div id="bottom">
+<div class="sublime">
+<div class="bars">
+<span class="logo"></span>
+<span class="name">Sublime Text</span>
+<span class="minimize"></span>
+<span class="maximize"></span>
+<span class="close"></span>
+</div>
+<div class="code"><textarea id="textareaCode">&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+&lt;script src=&quot;http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.12.0.min.js&quot;&gt;&lt;/script&gt;
+&lt;/head&gt;
+&lt;body&gt;
+
+    &lt;input type=&quot;text&quot; name=&quot;hoten&quot; placeholder=&quot;Nhập họ t&ecirc;n&quot;&gt;
+
+    &lt;button type=&quot;button&quot; name=&quot;kichhoat&quot;&gt;K&iacute;ch hoạt&lt;/button&gt;
+
+    &lt;script&gt;
+        $(document).ready(function(){
+            $(&quot;button[name='kichhoat']&quot;).click(function(){
+                $(&quot;input[name='hoten']&quot;).blur();
+            })
+            $(&quot;input[name='hoten']&quot;).blur(function(){
+                alert(&quot;Sự kiện blur() vừa mới xảy ra&quot;);
+            })
+        })
+    &lt;/script&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;</textarea></div>
+<div class="run"></div></div>
+</div>
+<div id="sublime"></div>
+<textarea>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+&lt;script src=&quot;http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.12.0.min.js&quot;&gt;&lt;/script&gt;
+&lt;/head&gt;
+&lt;body&gt;
+
+    &lt;input type=&quot;text&quot; name=&quot;hoten&quot; placeholder=&quot;Nhập họ t&ecirc;n&quot;&gt;
+
+    &lt;button type=&quot;button&quot; name=&quot;kichhoat&quot;&gt;K&iacute;ch hoạt&lt;/button&gt;
+
+    &lt;script&gt;
+        $(document).ready(function(){
+            $(&quot;button[name='kichhoat']&quot;).click(function(){
+                $(&quot;input[name='hoten']&quot;).blur();
+            })
+            $(&quot;input[name='hoten']&quot;).blur(function(){
+                alert(&quot;Sự kiện blur() vừa mới xảy ra&quot;);
+            })
+        })
+    &lt;/script&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;</textarea>
+</body>
+</html>
+
