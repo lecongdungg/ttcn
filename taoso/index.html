@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!--Start of Fchat.vn--><script type="text/javascript" src="https://cdn.fchat.vn/assets/embed/webchat.js?id=64734cb4c207fc76c402acb2" async="async"></script><!--End of Fchat.vn-->
+	<title>Trình tạo số ngẫu nhiên</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<meta charset="utf-8">
+	<style>
+		.container {
+			margin-bottom: 40px;
+		}
+
+		.add-excluded-number-text {
+			margin: 0;
+		}
+
+		.input-group {
+			margin-bottom: 20px;
+		}
+
+		#excluded-add-button {
+			display: flex;
+			align-items: center;
+			margin-bottom: 20px;
+		}
+
+		#excluded-add-button button {
+			margin-left: 10px;
+		}
+
+		#result {
+			margin-top: 20px;
+		}
+
+		/* Added CSS to make copyright notice bold */
+		.footer {
+			font-weight: bold;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<h2><span style="color:coral">TRÌNH TẠO SỐ NGẪU NHIÊN</span></h2>
+		<h4><span style="color:coral">( RANDOM NUMBER GENERATOR )</span></h4>
+		<form>
+			<div class="input-group">
+				<label for="min-number"><p>SỐ NHỎ NHẤT, BẮT ĐẦU<br>( MIN )</p></label>
+				<input type="number" id="min-number" name="min-number">
+			</div>
+			<div class="input-group">
+				<label for="max-number"><p>SỐ LỚN NHẤT, KẾT THÚC<br>( MAX )</p></label>
+				<input type="number" id="max-number" name="max-number">
+			</div>
+			<div id="excluded-inputs" class="input-group">
+				<label for="excluded-number"><p>SỐ CẦN LOẠI TRỪ</p></label>
+				<input type="number" class="excluded-number-input" name="excluded-number">
+			</div>
+			<div id="excluded-add-button">
+				<p class="add-excluded-number-text">Nhấn dấu + để thêm số cần loại trừ</p>
+				<button type="button" id="add-excluded-number-button">+</button>
+			</div>
+			<button type="button" id="generate-button"><p>TẠO SỐ<br>( CREATE NUMBERS )</p></button>
+		</form>
+		<div id="result"></div>
+	</div>
+	<div class="footer">
+		<p><strong>&copy; Bản quyền thuộc về Lê Công Dụng</strong></p>
+	</div>
+	<script src="script.js"></script>
+</body>
+</html>
